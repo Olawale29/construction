@@ -289,19 +289,49 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="project-image mb-10">
-                        <img src="assets/images/project/project5.jpeg" alt="Project Large Image">
+                    <div class="swiper-container mb-10 project-image">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project8.jpg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project5.jpeg" alt="Project Large Image">
+                            </div>
+                            <!-- Add more swiper-slide divs as needed -->
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project1.jpeg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project2.jpeg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project9.jpg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project6.jpeg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project4.jpg" alt="Project Large Image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/images/project/project100.jpg" alt="Project Large Image">
+                            </div>
+                        </div>
+                        <!-- Add pagination if needed -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add navigation if needed -->
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
                     </div>
                 </div>
             </div>
-
             <div class="row mb-n9">
                 <div class="col-md-5 col-lg-3 mb-8 col-sm-12">
                     <div class="project-info">
                         <h4 class="title mb-6">Project Information</h4>
                         <ul class="mb-n1">
-                            <li><span>Client:</span>Family House.</li>
-                            <li><span>Project Location:</span>Ikeja Lagos.</li>
+                            <!-- <li><span>Client:</span>Family House.</li> -->
+                            <li><span>Project Location:</span>Ekpoma Edo State</li>
                             <li><span>Project Duration:</span>3 weeks</li>
                             
                      
@@ -310,8 +340,8 @@
                 </div>
                 <div class="col-md-7 col-lg-9 col-sm-12 mb-8">
                     <div class="project-desc">
-                        <h4 class="title mb-6">Project Description</h4>
-                        <p>Our team undertook an exciting and ambitious project to transform a family house located in the bustling neighborhood of Ikeja, Lagos. Utilizing a variety of vibrant interior design principles, we embarked on a comprehensive makeover that spanned three intensive weeks. From the outset, our goal was to breathe new life into the living spaces, infusing them with bold colors, dynamic patterns, and innovative design elements that would reflect the unique personality and lifestyle of the family.</p>
+                        <h4 class="title mb-6">Interior remodeling of 3 bedroom apartment.</h4>
+                        <p>Our team undertook an exciting and ambitious project to transform a house located in the bustling neighborhood of Ekpoma, Edo State. Utilizing a variety of vibrant interior design principles, we embarked on a comprehensive makeover that spanned three intensive weeks. From the outset, our goal was to breathe new life into the living spaces, infusing them with bold colors, dynamic patterns, and innovative design elements that would reflect the unique personality and lifestyle of the family.</p>
                     </div>
                 </div>
             </div>
@@ -430,7 +460,6 @@
 
     <!-- Vendors JS -->
 
-
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
@@ -459,6 +488,24 @@
 
     <!--Main JS-->
     <script src="assets/js/main.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        });
+      </script>
+      
 </body>
 
 
